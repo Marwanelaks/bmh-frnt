@@ -1,0 +1,205 @@
+<div novalidate autocomplete="off">
+	<!-- {{addForm.value |json}} -->
+	<div class="kt-portlet portlet-3">
+		<div class="kt-portlet__head kt-bg-portlet-3">
+			<div class="kt-portlet__head-label">
+				<h2 class="kt-portlet__head-title kt-font-inverse-brand">
+					Programmer la visite:
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<form action="">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group fv-plugins-icon-container">
+					<mat-form-field class="example-full-width">
+						<label>Liste des établissements: </label>
+						<mat-select
+							multiple
+							[(value)]="selected"
+							class="form-control"
+						>
+							<mat-option value="etablissements">
+								établissements 1
+							</mat-option>
+							<mat-option value="etablissements1">
+								établissements 2
+							</mat-option>
+							<mat-option value="etablissements2">
+								établissements 3
+							</mat-option>
+							<mat-option value="etablissements3">
+								établissements 4
+							</mat-option>
+							<mat-option value="etablissements4">
+								établissements 5
+							</mat-option>
+						</mat-select>
+					</mat-form-field>
+					<div class="fv-plugins-message-container"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group fv-plugins-icon-container">
+					<mat-form-field class="example-full-width">
+						<mat-label>Date:</mat-label>
+						<input
+							value="2023-01-01"
+							type="date"
+							class="form-control-solid form-control-lg"
+							name="address1"
+							matInput
+						/>
+					</mat-form-field>
+					<div class="fv-plugins-message-container"></div>
+
+					<div class="fv-plugins-message-container"></div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group fv-plugins-icon-container">
+					<mat-form-field class="example-full-width">
+						<mat-label>Heure:</mat-label>
+						<input
+							value="10:01"
+							type="time"
+							class="form-control-solid form-control-lg"
+							name="address1"
+							matInput
+						/>
+					</mat-form-field>
+					<div class="fv-plugins-message-container"></div>
+
+					<div class="fv-plugins-message-container"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group fv-plugins-icon-container">
+					<mat-form-field class="example-full-width">
+						<mat-label>Type:</mat-label>
+						<mat-select [(value)]="selected1" class="form-control">
+							<mat-option value="Type"> Type 1 </mat-option>
+							<mat-option value="Type1"> Type 2 </mat-option>
+							<mat-option value="Type2"> Type 3 </mat-option>
+							<mat-option value="Type3"> Type 4 </mat-option>
+							<mat-option value="Type4"> Type 5 </mat-option>
+						</mat-select>
+					</mat-form-field>
+					<div class="fv-plugins-message-container"></div>
+
+					<div class="fv-plugins-message-container"></div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group fv-plugins-icon-container">
+					<mat-form-field class="example-full-width">
+						<mat-label>Sous-type:</mat-label>
+						<mat-select [(value)]="selected2" class="form-control">
+							<mat-option value="Sous"> Sous-type 1 </mat-option>
+							<mat-option value="Sous1"> Sous-type 2 </mat-option>
+							<mat-option value="Sous2"> Sous-type 3 </mat-option>
+							<mat-option value="Sous3"> Sous-type 4 </mat-option>
+							<mat-option value="Sous4"> Sous-type 5 </mat-option>
+						</mat-select>
+					</mat-form-field>
+					<div class="fv-plugins-message-container"></div>
+
+					<div class="fv-plugins-message-container"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group fv-plugins-icon-container">
+					<mat-form-field class="example-full-width">
+						<mat-label>Motif de visite:</mat-label>
+						<input
+							type="text"
+							class="form-control-solid form-control-lg"
+							name="address1"
+							matInput
+							value="Motif de visite"
+						/>
+					</mat-form-field>
+					<div class="fv-plugins-message-container"></div>
+
+					<div class="fv-plugins-message-container"></div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group fv-plugins-icon-container">
+					<mat-form-field class="example-full-width">
+						<mat-label>Agent:</mat-label>
+						<input
+							type="text"
+							class="form-control-solid form-control-lg"
+							name="address1"
+							matInput
+							value="Agent 1"
+						/>
+					</mat-form-field>
+					<div class="fv-plugins-message-container"></div>
+
+					<div class="fv-plugins-message-container"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="m-6 text-center purple">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<mat-form-field class="example-full-width">
+							<mat-select
+								[(value)]="selected3"
+								class="form-control-lg"
+								placeholder="Convention"
+							>
+								<mat-option value="Convention"
+									>Convention A</mat-option
+								>
+								<mat-option value="Convention1"
+									>Convention B</mat-option
+								>
+								<mat-option value="Convention2"
+									>Convention C</mat-option
+								>
+								<mat-option value="Convention3"
+									>Convention D
+								</mat-option>
+							</mat-select>
+						</mat-form-field>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="kt-portlet__heads">
+			<div class="kt-portlet__head-label text-right">
+				<button
+					href="javascript:; "
+					(click)="RetourEmbalages()"
+					_ngcontent-dkp-c41=""
+					class="btn btn-secondary btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u"
+				>
+					<i _ngcontent-dkp-c41="" class="la la-recycle"></i>
+					Retour
+				</button>
+				<button
+					_ngcontent-dkp-c41=""
+					class="btn btn-success btn-md btn-tall btn-wide kt-font-bold kt-font-transform-u"
+					type="reset"
+				>
+					<i _ngcontent-dlp-c41 class="icon la la-floppy-o"></i>
+					Enregistrer
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
